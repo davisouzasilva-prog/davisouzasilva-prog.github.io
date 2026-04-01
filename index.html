@@ -1,1 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dsystem - Controle Total da sua Operação Logística</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        dsystem: { dark: '#0b1b3d', blue: '#1e3a8a', green: '#10b981' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text { background: linear-gradient(to right, #10b981, #1e3a8a); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .gradient-bg { background: linear-gradient(to right, #10b981, #1e3a8a); }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50 antialiased overflow-x-hidden">
 
+    <nav class="bg-white py-4 px-8 flex justify-between items-center shadow-sm sticky top-0 z-50">
+        <div class="flex items-center gap-2">
+            <i class="fa-solid fa-truck-fast text-3xl text-dsystem-blue"></i>
+            <span class="text-2xl font-bold text-dsystem-dark">Dsystem</span>
+        </div>
+        <div class="hidden md:flex gap-6 font-medium text-gray-600">
+            <a href="#" class="hover:text-dsystem-blue">Soluções</a>
+            <a href="#" class="hover:text-dsystem-blue">Como Funciona</a>
+            <a href="#" class="hover:text-dsystem-blue">Depoimentos</a>
+            <a href="#" class="hover:text-dsystem-blue">Preços</a>
+        </div>
+        <a href="#contato" class="gradient-bg text-white px-6 py-2 rounded-full font-semibold hover:shadow-lg transition">Solicitar Demo</a>
+    </nav>
+
+    <section class="max-w-7xl mx-auto px-8 py-16 flex flex-col lg:flex-row items-center gap-12 bg-white mt-4 rounded-2xl shadow-sm">
+        <div class="lg:w-1/2">
+            <h1 class="text-5xl font-extrabold leading-tight text-dsystem-dark mb-6">
+                REVOLUCIONE SUA LOGÍSTICA COM <span class="gradient-text">INTELIGÊNCIA DIGITAL</span>
+            </h1>
+            <p class="text-lg text-gray-600 mb-8">
+                A plataforma completa para visibilidade, otimização e controle total da sua cadeia de suprimentos.
+            </p>
+            <div class="flex gap-4">
+                <a href="#contato" class="gradient-bg text-white px-8 py-3 rounded-full font-semibold shadow-md hover:shadow-lg transition">Começar Agora</a>
+                <a href="#contato" class="border-2 border-dsystem-blue text-dsystem-blue px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition">Falar com Especialista</a>
+            </div>
+        </div>
+        <div class="lg:w-1/2 relative">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8ed7c663be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Logística Digital" class="rounded-xl shadow-2xl object-cover h-96 w-full">
+            <div class="absolute -top-4 -left-4 bg-white p-4 rounded-xl shadow-lg">
+                <i class="fa-solid fa-chart-line text-dsystem-green text-3xl"></i>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-8 py-20 text-center">
+        <h2 class="text-3xl font-bold text-dsystem-dark mb-12">Nossas Soluções</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition text-left">
+                <i class="fa-solid fa-truck text-4xl text-dsystem-blue mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">TMS</h3>
+                <p class="text-sm font-semibold text-gray-500 mb-2">Transport Management System</p>
+                <p class="text-gray-600 text-sm">Plataforma completa para visibilidade, otimização e controle total da sua cadeia de suprimentos.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition text-left">
+                <i class="fa-solid fa-warehouse text-4xl text-dsystem-green mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">WMS</h3>
+                <p class="text-sm font-semibold text-gray-500 mb-2">Warehouse Management System</p>
+                <p class="text-gray-600 text-sm">A plataforma completa para visibilidade, otimização e controle total da sua cadeia de suprimentos.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100 hover:shadow-xl transition text-left">
+                <i class="fa-solid fa-chart-pie text-4xl text-teal-500 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Analytics & BI</h3>
+                <p class="text-sm font-semibold text-gray-500 mb-2">Analytics Management System</p>
+                <p class="text-gray-600 text-sm">Plataforma completa para visibilidade, otimização e controle total da sua cadeia de suprimentos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-8">
+            <h2 class="text-3xl font-bold text-center text-dsystem-dark mb-16">Principais Benefícios</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <i class="fa-solid fa-hand-holding-dollar text-4xl text-dsystem-green mb-4"></i>
+                    <h4 class="font-bold text-lg mb-2">Redução de Custos</h4>
+                    <p class="text-gray-500 text-sm">Redução de custos operacionais e estabilidade de otimização.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-route text-4xl text-dsystem-blue mb-4"></i>
+                    <h4 class="font-bold text-lg mb-2">Otimização de Rotas</h4>
+                    <p class="text-gray-500 text-sm">Otimização de rotas e agilidade em tempo real nas operações.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-eye text-4xl text-teal-500 mb-4"></i>
+                    <h4 class="font-bold text-lg mb-2">Visibilidade em Tempo Real</h4>
+                    <p class="text-gray-500 text-sm">Visibilidade em tempo real para tomada de decisões.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-link text-4xl text-gray-700 mb-4"></i>
+                    <h4 class="font-bold text-lg mb-2">Integração Sem Costura</h4>
+                    <p class="text-gray-500 text-sm">Integração perfeita com sistemas já existentes na sua empresa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto px-8 py-20 text-center">
+        <h2 class="text-3xl font-bold text-dsystem-dark mb-12">Como Funciona</h2>
+        <p class="text-gray-600 mb-12">Estrutura de construção fácil na operação logística para facilitar a integração.</p>
+        
+        <div class="flex flex-col md:flex-row justify-between items-center relative">
+            <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-gray-200 -z-10 transform -translate-y-1/2"></div>
+            
+            <div class="bg-white px-4 mb-8 md:mb-0">
+                <div class="w-12 h-12 rounded-full gradient-bg text-white flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-lg">1</div>
+                <h4 class="font-bold mb-2">Setup Fácil</h4>
+                <p class="text-sm text-gray-500 max-w-xs">Configuração rápida para iniciar suas operações.</p>
+            </div>
+            <div class="bg-white px-4 mb-8 md:mb-0">
+                <div class="w-12 h-12 rounded-full gradient-bg text-white flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-lg">2</div>
+                <h4 class="font-bold mb-2">Mapeamento</h4>
+                <p class="text-sm text-gray-500 max-w-xs">Integração na nossa plataforma de controle.</p>
+            </div>
+            <div class="bg-white px-4">
+                <div class="w-12 h-12 rounded-full gradient-bg text-white flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-lg">3</div>
+                <h4 class="font-bold mb-2">Integração</h4>
+                <p class="text-sm text-gray-500 max-w-xs">Tudo pronto para rodar a sua operação logística.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="bg-dsystem-dark text-white pt-16 pb-8 px-8 mt-12 rounded-t-3xl">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12 mb-16">
+            <div class="md:w-1/2">
+                <div class="flex items-center gap-2 mb-6">
+                    <i class="fa-solid fa-truck-fast text-3xl text-dsystem-green"></i>
+                    <span class="text-2xl font-bold">Dsystem</span>
+                </div>
+                <h2 class="text-4xl font-bold leading-tight mb-4">Pronto para dominar sua operação logística?</h2>
+                <p class="text-gray-300">Plataforma completa para coordenar sua operação logística!</p>
+            </div>
+            
+            <div class="md:w-1/2 bg-white/10 p-8 rounded-2xl backdrop-blur-sm w-full">
+                <form class="flex flex-col gap-4">
+                    <input type="text" placeholder="Nome" class="w-full px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-dsystem-green">
+                    <input type="email" placeholder="Email Corporativo" class="w-full px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-dsystem-green">
+                    <button type="submit" class="w-full gradient-bg text-white font-bold py-3 rounded-lg hover:shadow-lg transition mt-2">Solicitar Demonstração</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="max-w-6xl mx-auto border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+            <div class="flex items-center gap-2 mb-4 md:mb-0">
+                <span class="font-bold text-white">Dsystem</span> &copy; 2026. Todos os direitos reservados.
+            </div>
+            <div class="flex gap-6 mb-4 md:mb-0">
+                <a href="#" class="hover:text-white">Termos</a>
+                <a href="#" class="hover:text-white">Privacidade</a>
+                <a href="#" class="hover:text-white">Suporte</a>
+            </div>
+            <div class="flex gap-4 text-lg">
+                <a href="#" class="hover:text-white"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-white"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
